@@ -1,14 +1,14 @@
 
-function Pizza({name , photoName , price , soldOut , ingredient}) {
+function Pizza(props) {
   // console.log(props);
   return (
-    <li className={`pizza  ${soldOut?'disable':'enabled'}`}>
-      <img src={photoName} alt={name} />
+    <li className={`pizza  ${props.soldOut?'disable':'enabled'}`}>
+      <img src={props.photoName} alt={props.name} />
       <div>
-        <h3>{name}</h3>
-        <p>{ingredient}</p>
-        <span>${price}</span>
-        {soldOut?(<p>Sold Out</p>) : ''}
+        <h3>{props.name}</h3>
+        <p>{props.ingredient}</p>
+        <span>${props.price}</span>
+        {props.soldOut?(<p>Sold Out</p>) : ''}
       </div>
     </li>
   );
