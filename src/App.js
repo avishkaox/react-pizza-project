@@ -1,15 +1,15 @@
-import logo from './logo.svg';
+import './index.css';
 import './App.css';
-import Pizza from './Pizza'
+import Header from './Header';
+import Menu from './Menu';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>this is from app</h1>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
+    <div className="container">
+      <Header></Header>
+      <Menu></Menu>
+      <Footer></Footer>
     </div>
   );
 }
